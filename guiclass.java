@@ -39,6 +39,13 @@ public class guiclass
         tabpane.add("Query Two" , query2);
         tabpane.add("Query Three" , query3);
         frame.add(tabpane);
-
+        
+         // buttons for different queries
+        JButton button1 = new JButton("Search by Author Name"); // For returning results based on author name
+        button1.setFont(new Font("Consolas",Font.BOLD,20));
+        JButton button2 = new JButton("Search by Title Tag");   // For returning results based on title tag
+        button2.setFont(new Font("Consolas",Font.BOLD,20));
+        query1.add(button1);
+        query1.add(button2);
     }
 }
