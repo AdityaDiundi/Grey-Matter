@@ -6,11 +6,13 @@ import java.io.*;
 
 public class parser
 {
-
     public static void main(String[] args)
     {
+        guiclass obj = new guiclass();
+        obj.drawframe();
         System.setProperty("jdk.xml.entityExpansionLimit", "0");
-        try
+       /*
+       try
         {
             File ifile = new File ("src\\dblp.xml");
             SAXParserFactory factory = SAXParserFactory.newInstance();
@@ -22,13 +24,34 @@ public class parser
         {
             e.printStackTrace();
         }
+        */
     }
 }
-
+/*
 class handler extends DefaultHandler
 {
     boolean auname;
     boolean ttag;
+
+    public void filework(char[] content)
+    {
+        try
+        {
+            File file = new File("src\\aunamettag.txt");
+            if (!file.exists())
+            {
+                file.createNewFile();
+            }
+            FileWriter fw = new FileWriter(file.getAbsoluteFile());
+            BufferedWriter bw = new BufferedWriter(fw);
+            bw.write(content);
+            bw.close();
+        }
+        catch (IOException f)
+        {
+            f.printStackTrace();
+        }
+    }
 
     @Override
     public void startElement(String uri , String localName , String qName , Attributes attributes) throws SAXException
@@ -49,13 +72,15 @@ class handler extends DefaultHandler
         if (auname)
         {
             System.out.println("Author name : " + new String(ch, start, length));
+            filework(ch);
             auname = false;
         }
         else if (ttag)
         {
             System.out.println("Title name : " + new String(ch,start,length));
+            filework(ch);
             ttag = false;
         }
     }
 }
-
+*/
