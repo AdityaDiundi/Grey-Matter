@@ -1,6 +1,11 @@
 import javax.swing.*;
 import javax.swing.plaf.FontUIResource;
 import java.awt.Font;
+
+//! GUI class for handling UI.
+/*!
+    This class contains swing library functions used to create the gui for the query engine
+ */
 public class guiclass
 {
     void drawframe()
