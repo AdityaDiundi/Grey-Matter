@@ -10,6 +10,7 @@ import java.util.logging.FileHandler;
 
 //! Parser class for parsing dblp.xml.
 /*!
+    Following comments are updated for generating doxygen documentation for this project with proper commenting syntax
     This class contains handler class which contains functions for solving queries and also to drive the gui upon execution
  */
 public class parser {
@@ -35,7 +36,7 @@ public class parser {
 }
 
 //! Handler class for carrying out parsing operations and user queries.
-/*! This class contains query functions and event based parsing functions
+/*! This class contains query functions and event based parsing functions Moreover it can be considered as a driver class for running our query classes
 */
 class handler extends DefaultHandler {
 
