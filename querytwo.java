@@ -13,6 +13,10 @@ import java.util.logging.FileHandler;
 import java.util.*;
 import java.io.*;
 
+//! Query class for listing out No of authors having more than k publications
+/*!
+    This class extends the DefaultHandler for character and startElement functions
+ */
 public class querytwo extends DefaultHandler
 {
 
